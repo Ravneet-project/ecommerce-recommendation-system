@@ -2,37 +2,40 @@
 
 ## Overview
 
-The E-Commerce Recommendation System is a Machine Learning application developed to analyze customer purchasing behaviour and generate business insights. The project combines regression, classification, and clustering techniques to predict customer ratings, estimate purchase likelihood, and segment customers based on shopping behaviour.
+The E-Commerce Recommendation System is a Machine Learning application designed to analyze customer purchasing behaviour and provide intelligent business insights.
 
-The application also includes an interactive Streamlit dashboard for visualization and prediction.
-
----
-
-## Project Objectives
-
-- Predict customer product ratings using regression.
-- Predict purchase likelihood using classification.
-- Segment customers using K-Means clustering.
-- Visualize customer behaviour through an interactive dashboard.
-- Compare Machine Learning models.
+The project implements multiple Machine Learning techniques including Regression, Classification, and Clustering to predict customer ratings, estimate purchase likelihood, and segment customers based on shopping behaviour. An interactive Streamlit dashboard is also developed for visualization and prediction.
 
 ---
 
-## Technologies Used
+# Features
+
+- Product Rating Prediction
+- Purchase Prediction
+- Customer Segmentation
+- Exploratory Data Analysis
+- Interactive Streamlit Dashboard
+- Business Insights
+- Model Comparison
+- Saved Machine Learning Models
+
+---
+
+# Technologies Used
 
 | Technology | Purpose |
 |------------|----------|
 | Python | Programming Language |
-| Pandas | Data Processing |
+| Pandas | Data Analysis |
 | NumPy | Numerical Computing |
-| Matplotlib | Data Visualization |
+| Matplotlib | Visualization |
 | Scikit-Learn | Machine Learning |
-| Streamlit | Dashboard Development |
+| Streamlit | Dashboard |
 | Joblib | Model Serialization |
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```
 Ecommerce_Recommendation_System
@@ -53,11 +56,24 @@ Ecommerce_Recommendation_System
 │   └── scaler.pkl
 │
 ├── screenshots
-│   ├── dashboard.png
-│   ├── rating_prediction.png
-│   ├── purchase_prediction.png
-│   ├── customer_segmentation.png
-│   └── model_comparison.png
+│   ├── 01_purchase_distribution.png
+│   ├── 02_rating_distribution.png
+│   ├── 03_customer_age.png
+│   ├── 04_gender_distribution.png
+│   ├── 05_product_category.png
+│   ├── 06_average_spending.png
+│   ├── 07_browsing_time.png
+│   ├── 08_previous_purchase.png
+│   ├── 09_correlation_matrix.png
+│   ├── 10_top_customers.png
+│   ├── 11_purchase_vs_browsing.png
+│   ├── 12_actual_prediction.png
+│   ├── 13_confusion_matrix.png
+│   ├── 14_roc_curve.png
+│   ├── 15_elbow_method.png
+│   ├── 16_customer_segments.png
+│   ├── 17_customer_segment_bar.png
+│   └── 18_silhouette_analysis.png
 │
 └── assets
 ```
@@ -72,35 +88,29 @@ flowchart LR
 A[Dataset]
 -->B[Data Preprocessing]
 
-B
--->C[Exploratory Data Analysis]
+B-->C[Exploratory Data Analysis]
 
-C
--->D[Feature Engineering]
+C-->D[Feature Engineering]
 
-D
--->E[Train-Test Split]
+D-->E[Train Test Split]
 
-E
--->F[Regression]
+E-->F[Regression Model]
 
-E
--->G[Classification]
+E-->G[Classification Model]
 
-E
--->H[Clustering]
+E-->H[K Means Clustering]
 
-F
--->I[Model Evaluation]
+F-->I[Rating Prediction]
 
-G
--->I
+G-->J[Purchase Prediction]
 
-H
--->I
+H-->K[Customer Segmentation]
 
-I
--->J[Streamlit Dashboard]
+I-->L[Business Dashboard]
+
+J-->L
+
+K-->L
 ```
 
 ---
@@ -110,71 +120,29 @@ I
 ```mermaid
 flowchart TD
 
-User
+A[User]
 
--->
+A-->B[Streamlit Dashboard]
 
-Dashboard
+B-->C[Machine Learning Models]
 
-Dashboard
+C-->D[Regression]
 
--->
+C-->E[Classification]
 
-Machine Learning Models
+C-->F[K Means Clustering]
 
-Machine Learning Models
+D-->G[Rating Prediction]
 
--->
+E-->H[Purchase Prediction]
 
-Regression Model
+F-->I[Customer Segmentation]
 
-Machine Learning Models
+G-->J[Business Insights]
 
--->
+H-->J
 
-Classification Model
-
-Machine Learning Models
-
--->
-
-K-Means Clustering
-
-Regression Model
-
--->
-
-Rating Prediction
-
-Classification Model
-
--->
-
-Purchase Prediction
-
-K-Means Clustering
-
--->
-
-Customer Segmentation
-
-Rating Prediction
-
--->
-
-Dashboard
-
-Purchase Prediction
-
--->
-
-Dashboard
-
-Customer Segmentation
-
--->
-
-Dashboard
+I-->J
 ```
 
 ---
@@ -183,7 +151,7 @@ Dashboard
 
 ## Regression
 
-Purpose
+Objective
 
 Predict customer product ratings.
 
@@ -194,16 +162,16 @@ Algorithms
 
 Evaluation Metrics
 
-- Mean Absolute Error (MAE)
-- Mean Squared Error (MSE)
-- Root Mean Squared Error (RMSE)
+- Mean Absolute Error
+- Mean Squared Error
+- Root Mean Squared Error
 - R² Score
 
 ---
 
 ## Classification
 
-Purpose
+Objective
 
 Predict whether a customer is likely to purchase a product.
 
@@ -223,15 +191,15 @@ Evaluation Metrics
 
 ## Clustering
 
-Purpose
+Objective
 
-Segment customers according to shopping behaviour.
+Segment customers into different behavioural groups.
 
 Algorithm
 
 - K-Means Clustering
 
-Evaluation Metrics
+Evaluation
 
 - Elbow Method
 - Silhouette Score
@@ -240,7 +208,7 @@ Evaluation Metrics
 
 # Exploratory Data Analysis
 
-The project includes the following analyses:
+The project includes the following visualizations.
 
 - Purchase Status Distribution
 - Rating Distribution
@@ -257,21 +225,61 @@ The project includes the following analyses:
 
 ---
 
-# Dashboard Features
+# Dashboard Modules
 
-The Streamlit dashboard provides:
+The Streamlit application contains the following modules.
 
-- Dataset Preview
+- Dashboard
 - Rating Prediction
 - Purchase Prediction
 - Customer Segmentation
 - Model Comparison
 - Business Recommendation
-- Interactive Data Visualization
 
 ---
 
-# Screenshots
+# Results
+
+The developed system successfully demonstrates
+
+- Product rating prediction
+- Purchase prediction
+- Customer segmentation
+- Interactive dashboard visualization
+- Business decision support
+- Machine Learning model comparison
+
+---
+
+# Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/Ecommerce_Recommendation_System.git
+```
+
+Move into the project directory
+
+```bash
+cd Ecommerce_Recommendation_System
+```
+
+Install required libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the Streamlit application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+# Dashboard Screenshots
 
 ## Dashboard
 
@@ -279,15 +287,15 @@ The Streamlit dashboard provides:
 
 ---
 
-## Rating Prediction
-
-![Rating Prediction](screenshots/rating_prediction.png)
-
----
-
 ## Purchase Prediction
 
 ![Purchase Prediction](screenshots/purchase_prediction.png)
+
+---
+
+## Rating Prediction
+
+![Rating Prediction](screenshots/rating_prediction.png)
 
 ---
 
@@ -303,56 +311,18 @@ The Streamlit dashboard provides:
 
 ---
 
-# Installation
+# Future Scope
 
-Clone the repository
+The project can be further enhanced by implementing
 
-```bash
-git clone https://github.com/your-username/Ecommerce_Recommendation_System.git
-```
-
-Navigate to the project directory
-
-```bash
-cd Ecommerce_Recommendation_System
-```
-
-Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-Run the application
-
-```bash
-streamlit run app.py
-```
-
----
-
-# Results
-
-The developed system successfully:
-
-- Predicts customer ratings.
-- Predicts purchase likelihood.
-- Segments customers into meaningful groups.
-- Provides interactive business insights.
-- Visualizes customer behaviour using multiple analytical techniques.
-
----
-
-# Future Enhancements
-
-- Deep Learning Recommendation Models
 - Collaborative Filtering
 - Content-Based Recommendation
+- Hybrid Recommendation Systems
+- Deep Learning Models
 - Real-Time Recommendation Engine
 - Cloud Deployment
-- User Authentication
-- Sales Forecasting
 - REST API Integration
+- Sales Forecasting
 
 ---
 
@@ -360,5 +330,8 @@ The developed system successfully:
 
 **Ravneet Kaur**
 
+---
 
-Open Data Intelligence Hub
+# License
+
+This project is developed for educational purposes as part of the Open Data Intelligence Hub program.
