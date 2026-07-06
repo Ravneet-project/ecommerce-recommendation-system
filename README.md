@@ -358,8 +358,7 @@ The developed system successfully:
 
 # Author
 
-**Japneet Kaur**
+**Ravneet Kaur**
 
-Task 6 – Building a Recommendation System for E-Commerce
 
 Open Data Intelligence Hub
