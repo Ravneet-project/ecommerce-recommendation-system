@@ -276,39 +276,6 @@ Run the Streamlit application
 ```bash
 streamlit run app.py
 ```
-
----
-
-# Dashboard Screenshots
-
-## Dashboard
-
-![Dashboard](screenshots/dashboard.png)
-
----
-
-## Purchase Prediction
-
-![Purchase Prediction](screenshots/purchase_prediction.png)
-
----
-
-## Rating Prediction
-
-![Rating Prediction](screenshots/rating_prediction.png)
-
----
-
-## Customer Segmentation
-
-![Customer Segmentation](screenshots/customer_segmentation.png)
-
----
-
-## Model Comparison
-
-![Model Comparison](screenshots/model_comparison.png)
-
 ---
 
 # Future Scope
